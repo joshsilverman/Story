@@ -1,0 +1,233 @@
+#header
+  = image_tag 'logo.gif'
+  %span @studyegg
+
+.deck
+
+  / .problem
+  .slide.title
+    = image_tag 'logo-web.png'
+    %h1 Learning Personalized
+    .panels
+      .panel.one= image_tag 'deck/panel1.png'
+      .panel.two= image_tag 'deck/panel2.png'
+      .panel.three= image_tag 'deck/panel3.png'
+    .clr
+
+  .slide.do
+    %h1 
+      What we do
+    %h2 We empower students to learn at their own pace
+    .clr
+
+  .slide.proso
+    %h1 
+      Problem/Solution  
+    %h2 
+      Problem: Most students are 
+      %strong bored 
+      or 
+      %strong discouraged 
+      by their schoolwork.
+
+    %hr
+
+    .left
+      %h3 Average class size:
+    .right 
+      .ig.students
+        -(1..23).each do |i|
+          = image_tag "deck/student.png"
+        .last= image_tag "deck/student.png"
+        .clr
+        .num
+          %strong 23.6 
+          students
+    .clr
+
+    .right.multiplication= image_tag "deck/multiplication.png"
+    .clr
+
+    .left
+      %h3 Students must learn:
+    .right 
+      .ig.benchmarks
+        -(1..130).each do |i|
+          = image_tag "deck/benchmark.png"
+        .clr
+        .num
+          %strong 130 
+          benchmarks (avg)
+    .clr
+    
+    .right.equals= image_tag "deck/equals.png"
+    .clr
+
+    .left
+      %h3 Teachers must track progress for: 
+    .right 
+      .ig.skills
+        -(1..3068).each do |i|
+          = image_tag "deck/benchmark.png"
+        .clr
+        .num
+          %strong 3068 
+          student skills
+    .clr
+
+    %hr
+    %h2 Solution: Most students are bored or discourged by their school work.
+
+
+    .left{:style => 'display:none;'}
+      %h3 Distribution of ability:
+    .right{:style => 'display:none;'}
+      .ig.dist
+        .last= image_tag "deck/student.png"
+        .clr
+
+        = image_tag "deck/student.png"
+        = image_tag "deck/student.png"
+        .clr
+
+        = image_tag "deck/student.png"
+        = image_tag "deck/student.png"
+        = image_tag "deck/student.png"
+        = image_tag "deck/student.png"
+        = image_tag "deck/student.png"
+        = image_tag "deck/student.png"
+        .clr
+
+        = image_tag "deck/student.png"
+        = image_tag "deck/student.png"
+        = image_tag "deck/student.png"
+        = image_tag "deck/student.png"
+        = image_tag "deck/student.png"
+        = image_tag "deck/student.png"
+        = image_tag "deck/student.png"
+        = image_tag "deck/student.png"
+        = image_tag "deck/student.png"
+        = image_tag "deck/student.png"
+        = image_tag "deck/student.png"
+        = image_tag "deck/student.png"
+        = image_tag "deck/student.png"
+        = image_tag "deck/student.png"
+        = image_tag "deck/student.png"
+
+        .clr
+        .num
+          23.6 students per class
+
+    .clr
+
+  / .beginning
+  .slide.market
+    %h1 
+      Market
+
+    %h2 
+      Initial customer: K12 Teacher
+      %br 
+      (supported by schools/PTA)
+    %hr
+    .left
+      .ig.teachers
+        -(1..3).each do |i|
+          = image_tag "deck/teacher.png"
+        .last= image_tag "deck/teacher.png"
+        .clr
+        .num
+          %strong 3.7M 
+          teachers
+      .clr
+    .right.multiplication= image_tag "deck/multiplication.png"
+    .right
+      .ig
+        -(1..53).each do |i|
+          = image_tag "deck/money.png"
+        .clr
+        .num
+          %strong $538 
+          on instruction material
+      .clr
+    .clr
+    .equals= image_tag "deck/equals.png"
+    .clr
+    %h4 $1.9B Teacher market
+
+    %h2 Second customer: K12 Parent
+    %hr
+    .left
+      .ig.student
+        -(1..81).each do |i|
+          = image_tag "deck/student.png"
+        .last= image_tag "deck/student.png"
+        .clr
+        .num
+          %strong 81.5M 
+          K12 students
+      .clr
+    .right.multiplication= image_tag "deck/multiplication.png"
+    .right
+      .ig.price
+        .num
+          %strong $120 
+          ($10/month*)
+          %br
+          %span *Same pricing as TenMarks, BrainPop
+
+      .clr
+    .clr
+    .equals= image_tag "deck/equals.png"
+    .clr
+    %h4 $9.8B Parent market
+
+  .slide.customer
+    %h1 
+      Customer Acquisition
+    / %hr  
+    %h2 
+      Distribution partners
+    %hr
+    .partners
+
+      = image_tag "deck/edmodo.png"
+      .progress= image_tag "deck/inprogress-grey.png"
+      = image_tag "deck/einstruction.jpg"
+      = image_tag "deck/lms.png"
+    .clr
+
+    / %hr
+    %h2
+      Teacher referal 
+    %hr
+    .referal
+      = image_tag "deck/school.png"
+      = image_tag "deck/arrow.png"
+      = image_tag "deck/house.png"
+    .clr
+
+  .slide.tech
+    %h1 
+      Technology
+    .diagram
+      .engine.caption
+        %h3.title Adaptive questions
+        .point Optimized power functions
+        .point Specialized for student/media/mode
+      .media.caption
+        %h3.title Rich lessons
+        .point Wrong answer explanation
+        .point Inverted (ie Khan) lessons
+      = image_tag "deck/tech.png"
+
+  / .middle
+  .slide.competition
+    %h1 
+      Competition
+    .clr
+
+  .slide.next
+    %h1 
+      Next
+    .clr
