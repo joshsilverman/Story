@@ -5,7 +5,15 @@ gem 'rails', '3.1.3'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+group :test do
+  gem 'sqlite3', :require => false
+  gem 'turn', :require => false
+end
+
+group :production do
+  gem 'pg', :require => false
+end
+
 gem 'haml-rails'
 
 
@@ -31,12 +39,7 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
-group :test do
-  # Pretty printed test output
-  gem 'turn', '0.8.2', :require => false
-end
-
 group :development do
-	gem 'guard'
-	gem 'guard-livereload'
+	#gem 'guard'
+	#gem 'guard-livereload'
 end
